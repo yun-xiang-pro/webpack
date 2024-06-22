@@ -58,3 +58,7 @@ tsconfig.json
 //       "dist"
 //   ],
 // }
+
+
+// vue-loader
+// yarn add html-webpack-plugin

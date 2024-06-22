@@ -1,7 +1,11 @@
 const loader = require('css-loader')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
+
+
 module.exports = {
-    entry:'./src/index.ts',
+    entry:'./src/main.js',
     output:{
         path:path.join(__dirname,'dist'),
         filename:'bundle.js',
@@ -36,7 +40,19 @@ module.exports = {
                 test: /\.(png|jpg|gif)$/,
                 use: 'file-loader'
             },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+              },
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+          template: './src/index.html'
+        }),
+        new VueLoaderPlugin()
+
+        
+    ]
 }
 
