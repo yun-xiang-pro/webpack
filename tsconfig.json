@@ -1,0 +1,15 @@
+{
+    "compilerOptions":{
+      "target":"es5",
+      "sourceMap":true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "examples",
+        "index.d.ts",
+        "node_modules",
+        "dist"
+    ],
+}
