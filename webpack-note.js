@@ -1,3 +1,5 @@
+// git仓库：https://github.com/yun-xiang-pro/webpack
+
 // webpack enforce  pre post
 // loader pre inline normal post
 rules:[
@@ -58,3 +60,11 @@ tsconfig.json
 //       "dist"
 //   ],
 // }
+
+// npm install vue-loader vue veu-template-compiler css-loader --save-dev
+
+// yarn add vue-loader vue vue-template-compiler css-loader --dev
+
+// npm install html-webpack-plugin 或者
+// yarn add html-webpack-plugin
+
