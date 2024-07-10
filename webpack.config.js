@@ -37,8 +37,19 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif)$/,
-                use: 'file-loader'
+                use: 'file-loader',
+
             },
+            // {
+            //     test: /\.(png|jpg|gif)$/,
+            //     use: {
+            //         loader:'file-loader',
+            //         options:{
+            //             name:'[name].[ext]',
+            //             publicPath:'/static/'
+            //         }
+            //     }
+            // },
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
