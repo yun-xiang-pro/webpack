@@ -68,3 +68,12 @@ tsconfig.json
 // npm install html-webpack-plugin 或者
 // yarn add html-webpack-plugin
 
+// npm  install file-loader 或者
+// yarn add file-loader
+
+
+// {
+//   test: /\.(png|jpg|gif)$/,
+//   use: 'file-loader'
+// },
+

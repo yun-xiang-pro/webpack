@@ -35,15 +35,27 @@ module.exports = {
                 exclude: /node_modules/,
                 use: 'ts-loader'
             },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: 'file-loader'
-            },
+            // {
+            //     test: /\.(png|jpg|gif)$/,
+            //     use: 'file-loader'
+            // },
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: {
+                    loader:'url-loader',
+                    options:{
+                        limit:102400,
+                        name:'[name].[ext]',
+                    }
+                }
+
             }
-        ]
+           
+        ] 
     },
     plugins:[
         new HtmlWebpackPlugin({
