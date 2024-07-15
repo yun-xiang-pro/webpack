@@ -72,8 +72,10 @@ tsconfig.json
 // yarn add file-loader
 
 
-// {
-//   test: /\.(png|jpg|gif)$/,
-//   use: 'file-loader'
-// },
+{
+  test: /\.(png|jpg|gif)$/,
+  use: 'file-loader'
+},
+
+
 
