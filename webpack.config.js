@@ -53,8 +53,19 @@ module.exports = {
                     }
                 }
 
+            },
+            {
+                test: /\.js$/,
+                use: [
+                    {
+                        loader: path.resolve(__dirname, 'src/custom-loader/remove-console-loader.js'),
+                        options:{
+                            
+                        }
+
+                    },
+                ]
             }
-           
         ] 
     },
     plugins:[

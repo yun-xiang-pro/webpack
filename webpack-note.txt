@@ -78,4 +78,4 @@ tsconfig.json
 },
 
 
-
+npm install <pathto-loader>/src/custom-loader/remove-console-loader
