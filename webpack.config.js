@@ -3,6 +3,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { plugins } = require('@babel/preset-env/lib/plugins-compat-data');
 const { VueLoaderPlugin } = require('vue-loader');
+const { SourceMap } = require('module');
 module.exports = {
     entry:'./src/main.js',
     output:{
@@ -60,6 +61,7 @@ module.exports = {
                     {
                         loader: path.resolve(__dirname, 'src/custom-loader/remove-console-loader.js'),
                         options:{
+                           sourceMap:true
                             
                         }
 
@@ -73,6 +75,8 @@ module.exports = {
             template: './src/index.html'
         }),
         new VueLoaderPlugin()
-    ]
+    ],
+    devtool: 'source-map'
+   
 }
 
