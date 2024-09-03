@@ -8,6 +8,7 @@ import { ref} from 'vue';
 import testJpg from '/assets/test.jpg'
 // import {operationAdd,subtract,multiplication,division} from './operation.js'
 import {operation} from './operation.js'
+import {creatFn} from './creat-fn'
 // operation.operationAdd = () => {
 //     console.log('修改属性')
 // }
